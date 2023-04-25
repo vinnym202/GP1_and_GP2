@@ -1,3 +1,12 @@
+TRAIN_START_DATE = "2019-01-07"  # bug fix: start on Monday
+TRAIN_END_DATE = "2019-2-07"
+
+TEST_START_DATE = "2022-01-03"
+TEST_END_DATE = "2022-02-03"
+
+TRADE_START_DATE = "2023-01-02"
+TRADE_END_DATE = "2023-03-24"
+
 # stockstats technical indicator column names
 # check https://pypi.org/project/stockstats/ for different names
 INDICATORS = [

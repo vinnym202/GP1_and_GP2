@@ -1,0 +1,5 @@
+/test_data
+/train_data
+config_private.py
+/gp1_testing
+__pycache__/

@@ -1,0 +1,55 @@
+# stockstats technical indicator column names
+# check https://pypi.org/project/stockstats/ for different names
+INDICATORS = [
+    "vwma",
+    "atr",
+    "macd",
+    "boll_ub",
+    "boll_lb",
+    "rsi",
+    "cci",
+    "dx",
+    "wt1",
+    "wt2",
+    "kdjk",
+    "kdjd",
+    "kdjj",
+    "supertrend",
+    "close_30_sma",
+    "close_60_sma",
+]
+
+CDL = [
+    "CDL3BLACKCROWS",
+    "CDL3WHITESOLDIERS",
+    "CDLDARKCLOUDCOVER",
+    "CDLDOJI",
+    "CDLDOJISTAR",
+    "CDLDRAGONFLYDOJI",
+    "CDLENGULFING",
+    "CDLEVENINGDOJISTAR",
+    "CDLEVENINGSTAR",
+    "CDLGRAVESTONEDOJI",
+    "CDLHAMMER",
+    "CDLHANGINGMAN",
+    "CDLINVERTEDHAMMER",
+    "CDLLONGLEGGEDDOJI",
+    "CDLMORNINGDOJISTAR",
+    "CDLMORNINGSTAR",
+    "CDLPIERCING",
+    "CDLSPINNINGTOP",
+]
+
+# Possible time zones
+TIME_ZONE_SHANGHAI = "Asia/Shanghai"  # Hang Seng HSI, SSE, CSI
+TIME_ZONE_USEASTERN = "US/Eastern"  # Dow, Nasdaq, SP
+TIME_ZONE_PARIS = "Europe/Paris"  # CAC,
+TIME_ZONE_BERLIN = "Europe/Berlin"  # DAX, TECDAX, MDAX, SDAX
+TIME_ZONE_JAKARTA = "Asia/Jakarta"  # LQ45
+TIME_ZONE_SELFDEFINED = "xxx"  # If neither of the above is your time zone, you should define it, and set USE_TIME_ZONE_SELFDEFINED 1.
+USE_TIME_ZONE_SELFDEFINED = 0  # 0 (default) or 1 (use the self defined)
+
+# parameters for data sources
+ALPACA_API_KEY = "xxx"  # your ALPACA_API_KEY
+ALPACA_API_SECRET = "xxx"  # your ALPACA_API_SECRET
+ALPACA_API_BASE_URL = "https://paper-api.alpaca.markets"  # alpaca url

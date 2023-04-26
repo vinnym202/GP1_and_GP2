@@ -1,0 +1,1 @@
+Hyperparameters of trial number 79: {'learning_rate': 2.9820768283779893e-06, 'weight_decay': 0.034127528945272635, 'lambda_entropy': 0.0277546303742909}

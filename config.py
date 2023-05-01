@@ -45,6 +45,7 @@ CDL = [
     "CDLEVENINGSTAR",
     "CDLPIERCING",
     "CDLSHOOTINGSTAR",
+    "CDLSPINNINGTOP",
 ]
 
 # Possible time zones

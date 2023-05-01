@@ -1,4 +1,5 @@
 import alpaca_trade_api as tradeapi
+from alpaca_trade_api.rest import TimeFrame, TimeFrameUnit
 import exchange_calendars as tc
 import numpy as np
 import pandas as pd
@@ -40,7 +41,7 @@ class AlpacaProcessor:
         end_date = pd.Timestamp(end_date + " 15:59:00", tz=NY)
         barset = self.api.get_bars(
             ticker_list,
-            time_interval,
+            timeframe=TimeFrame(15, TimeFrameUnit.Minute),
             start=start_date.isoformat(),
             end=end_date.isoformat(),
         ).df
@@ -75,9 +76,9 @@ class AlpacaProcessor:
         for day in trading_days:
             NY = "America/New_York"
             current_time = pd.Timestamp(day + " 09:30:00").tz_localize(NY)
-            for i in range(390):
+            for i in range(26):
                 times.append(current_time)
-                current_time += pd.Timedelta(minutes=1)
+                current_time += pd.Timedelta(minutes=15)
 
         # create a new dataframe with full timestamp series
         new_df = pd.DataFrame()

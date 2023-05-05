@@ -6,6 +6,12 @@ GP1_TICKER = [
     "SPY",
 ]
 
+GP2_TICKER = [
+    "SQQQ",
+    "TQQQ",
+    "SPY",
+]
+
 # Dow 30 constituents in 2021/10
 DOW_30_TICKER = [
     "AXP",

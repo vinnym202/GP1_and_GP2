@@ -6,7 +6,7 @@ GP1_TICKER = [
     "SPY",
 ]
 
-GP2_TICKER = [
+GP2_TICKERS = [
     "SQQQ",
     "TQQQ",
     "SPY",
